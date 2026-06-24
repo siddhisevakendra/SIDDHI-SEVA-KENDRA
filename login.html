@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Siddhi Seva Kendra Login</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(135deg,#004aad,#00a2ff);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.box{
+background:#fff;
+width:350px;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 0 20px rgba(0,0,0,.3);
+}
+
+h2{
+color:#004aad;
+}
+
+input{
+width:90%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+width:95%;
+padding:12px;
+background:#004aad;
+color:white;
+border:none;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#003080;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>Siddhi Seva Kendra</h2>
+
+<input type="text" id="user" placeholder="Username">
+
+<input type="password" id="pass" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+</div>
+
+<script>
+function login(){
+
+let u=document.getElementById("user").value;
+let p=document.getElementById("pass").value;
+
+if(u=="admin" && p=="12345"){
+window.location.href="dashboard.html";
+}
+else{
+alert("Wrong Username or Password");
+}
+
+}
+</script>
+
+</body>
+</html>
