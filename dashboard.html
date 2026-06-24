@@ -1,85 +1,156 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Siddhi Seva Kendra Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siddhi Seva Kendra Dashboard</title>
+
 <style>
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial,sans-serif;
-background:linear-gradient(135deg,#004aad,#0099ff);
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
 }
 
-.login-box{
-background:#fff;
-padding:30px;
-width:320px;
-border-radius:15px;
-box-shadow:0 0 20px rgba(0,0,0,.3);
+body{
+background:#f4f6f9;
+}
+
+.header{
+background:#004aad;
+color:white;
+padding:20px;
 text-align:center;
 }
 
-h2{
+.header h1{
+font-size:32px;
+}
+
+.menu{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h2{
 color:#004aad;
+margin-bottom:10px;
 }
 
-input{
-width:90%;
-padding:12px;
-margin:10px 0;
-border:1px solid #ccc;
-border-radius:8px;
-}
-
-button{
-width:95%;
-padding:12px;
+.card a{
+display:inline-block;
+margin-top:10px;
+padding:10px 20px;
 background:#004aad;
-color:#fff;
-border:none;
-border-radius:8px;
-cursor:pointer;
-font-size:16px;
+color:white;
+text-decoration:none;
+border-radius:6px;
 }
 
-button:hover{
-background:#003080;
+.footer{
+background:#004aad;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:20px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
 }
 </style>
 </head>
 
 <body>
 
-<div class="login-box">
+<div class="header">
+<h1>SIDDHI SEVA KENDRA</h1>
+<p>Digital Service & Job Portal</p>
+</div>
 
-<h2>Siddhi Seva Kendra</h2>
+<div class="menu">
 
-<input type="text" id="user" placeholder="Username">
+<div class="card">
+<h2>PAN CARD</h2>
+<p>New PAN & Correction</p>
+<a href="#">Open</a>
+</div>
 
-<input type="password" id="pass" placeholder="Password">
+<div class="card">
+<h2>RTPS</h2>
+<p>Caste, Income & Residence</p>
+<a href="#">Open</a>
+</div>
 
-<button onclick="login()">Login</button>
+<div class="card">
+<h2>AADHAAR</h2>
+<p>Download & PVC Print</p>
+<a href="#">Open</a>
+</div>
+
+<div class="card">
+<h2>VOTER ID</h2>
+<p>Apply & Correction</p>
+<a href="#">Open</a>
+</div>
+
+<div class="card">
+<h2>LATEST JOBS</h2>
+<p>Government Jobs Update</p>
+<a href="#">Open</a>
+</div>
+
+<div class="card">
+<h2>RESULTS</h2>
+<p>Exam Results</p>
+<a href="#">Open</a>
+</div>
+
+<div class="card">
+<h2>ADMIT CARD</h2>
+<p>Download Admit Card</p>
+<a href="#">Open</a>
+</div>
+
+<div class="card">
+<h2>CONTACT</h2>
+<p>Call: 9934531702</p>
+<a href="#">Open</a>
+</div>
 
 </div>
 
-<script>
-function login(){
+<a class="whatsapp" href="https://wa.me/919934531702">💬</a>
 
-let user=document.getElementById("user").value;
-let pass=document.getElementById("pass").value;
-
-if(user=="siddhi" && pass=="siddhi"){
-window.location.href="index.html";
-}else{
-alert("Wrong Username or Password");
-}
-
-}
-</script>
+<div class="footer">
+© Siddhi Seva Kendra | 9934531702
+</div>
 
 </body>
 </html>
+```
